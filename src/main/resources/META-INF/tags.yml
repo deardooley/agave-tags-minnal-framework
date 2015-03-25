@@ -1,0 +1,26 @@
+---
+name: "tags"
+serializers: {}
+defaultMediaType: "application/json; charset=utf-8"
+packagesToScan:
+- "org.iplantc.service.tags"
+instrumentationEnabled: true
+basePath: "/"
+apiVersion: "1.0"
+db:
+  url: "jdbc:hsqldb:mem:."
+  username: "sa"
+  password: ""
+  driverClass: "org.hsqldb.jdbcDriver"
+  maxSize: 10
+  minSize: 5
+  packagesToScan:
+  - "org.iplantc.service.tags"
+  providerProperties:
+    hibernate.hbm2ddl.auto: "create-drop"
+    hibernate.current_session_context_class: "thread"
+    hibernate.dialect: "org.hibernate.dialect.HSQLDialect"
+    hibernate.show_sql: true
+    hibernate.format_sql: false
+    hibernate.ejb.naming_strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
+  readOnly: false
