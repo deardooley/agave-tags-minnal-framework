@@ -6,6 +6,11 @@
   <artifactId>org-iplantc-service-tags</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>org-iplantc-service-tags</name>
+
+  <properties>
+    <mainClass>org.minnal.Bootstrap</mainClass>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
